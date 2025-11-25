@@ -83,7 +83,7 @@ const LoginScreen: React.FC<Props> = () => {
               <CommonButton
                 title="Sign Up"
                 variant="primary"
-                onPress={() => {}}
+                onPress={() => { navigation.navigate('Home') }}
                 loading={false}
                 disabled={false}
                 fullWidth={false}

@@ -1,23 +1,19 @@
 import { Image, Pressable, StatusBar, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '@/utils/images'
 import { Colors } from '@/ui/theme/colors'
 import Fonts from '@/ui/theme/fonts'
 import { getProportionalFontSize } from '@/ui/theme/typography'
-import { TodayDate } from '@/ui/components/TodayDate'
-import { useNavigation } from '@react-navigation/native'
 import { Typography } from '@/ui/theme/typography';
 
 const PaysZalatScreen = () => {
-    const navigation = useNavigation();
     return (
        <View style={styles.container}>
-          {/* <StatusBar
+          <StatusBar
             barStyle="dark-content"
             backgroundColor="white"
             translucent={false}
-          /> */}
+          />
 
           <View style={styles.header}>
                 <Image source={images.paysZakat} style={styles.paysZakatImage} />

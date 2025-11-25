@@ -47,13 +47,13 @@ const HomeScreen = () => {
                   <Image source={images.guide} style={styles.logo} />
             </Pressable>
 
-            <View style={styles.titleRow}>
+              <Pressable style={styles.titleRow} onPress={() => { navigation.navigate('guide') }}>
                 <View>
                     <Text style={styles.title}>My Zakat History</Text>
                     <Text style={styles.subtitle}>View past served recods</Text>
                 </View>
                   <Image source={images.history} style={styles.logo} />
-            </View>
+            </Pressable>
         </View>
 
         <View style={styles.footer}>

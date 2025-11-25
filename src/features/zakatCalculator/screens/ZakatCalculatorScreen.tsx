@@ -63,7 +63,7 @@ const ZakatCalculatorScreen = () => {
                         <CommonButton
                             title="Reset"
                             variant="primary"
-                            onPress={() => { navigation.navigate('Home') }}
+                            onPress={() => { console.log('Reset Zakat') }}
                             loading={false}
                             disabled={false}
                             fullWidth={false}
@@ -73,7 +73,7 @@ const ZakatCalculatorScreen = () => {
                         <CommonButton
                             title="Calculate"
                             variant="primary"
-                            onPress={() => { navigation.navigate('Home') }}
+                            onPress={() => { console.log('Calculate Zakat') }}
                             loading={false}
                             disabled={false}
                             fullWidth={false}
